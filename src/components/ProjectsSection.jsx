@@ -48,28 +48,28 @@ const projects = [
     githubUrl: "https://github.com/SarthakMiglani/vakeelapp",
   },
   {
-    id: 3,
-    title: "E-commerce Platform",
-    description: `Full-featured e-commerce platform with user authentication and payment processing. Highlights:
+    id: 4,
+    title: "AyurTrace: Blockchain-Based Botanical Traceability",
+    description: `A blockchain-based system for botanical traceability of Ayurvedic herbs, including geo-tagging from the point of collection to the final formulation label.
 
-- Secure login and registration
-- Product catalog and search
-- Shopping cart and checkout
-- Stripe payment integration
-- Order history and management
-
-A robust foundation for launching your own online store!`,
-    image: "/projects/project3.png",
+- Android App for Farmers:An offline-first mobile application that allows farmers to capture plant images for AI-powered species detection, automatically geo-tag the location, and generate a batch number and QR code for the collected herbs.
+- End-to-End Traceability: Utilizes a permissioned blockchain to provide a transparent and tamper-proof record of the entire supply chain, from collection to consumer.
+- Smart Labeling: Generates QR codes for products that consumers can scan to view the complete provenance of the Ayurvedic herbs, including farm location, lab results, and sustainability checks.
+- AI-Powered Herb Identification: Employs TensorFlow Lite for on-device AI to identify herb species from images captured by farmers.
+- Secure and Immutable Records: All transactions and data related to the collection, testing, and processing of herbs are stored as immutable records on the Hyperledger Fabric blockchain.`,
+    image: "/projects/ayurtracelogo.png",
     images: [
-      "/projects/project3.png",
-      "/projects/project1.png",
-      "/projects/project2.png",
-      "/projects/project3.png",
-      "/projects/project1.png"
+      "/projects/ayurtrace4.png",
+      "/projects/ayurtrace3.png",
+      "/projects/ayurtrace2.png",
+      "/projects/ayurtrace1.png",
+      "/projects/ayurtrace5.jpeg",
+      "/projects/ayurtrace6.jpeg",
+      "/projects/ayurtrace7.jpeg",
     ],
     video: null,
-    tags: ["React", "Node.js", "Stripe"],
-    githubUrl: "#",
+    tags: ["HyperLedger Fabric", "TypeScript", "Node.js", "TensorFlow", "Kotlin"],
+    githubUrl: "https://github.com/SarthakMiglani/ayurtrace-frontend",
   },
 ];
 
@@ -161,7 +161,7 @@ export const ProjectsSection = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover cursor-pointer"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover cursor-pointer flex flex-col"
               onClick={() => setSelectedProject(project)}
             >
               {/* === MODIFICATION START === */}
@@ -174,7 +174,7 @@ export const ProjectsSection = () => {
               </div>
               {/* === MODIFICATION END === */}
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, idx) => (
                     <span key={idx} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
@@ -183,10 +183,10 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
                 <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4 truncate">
+                <p className="text-muted-foreground text-sm mb-4 flex-grow">
                   {project.description.split('\n')[0]}
                 </p>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-auto">
                   <div className="flex space-x-3">
                     
                     <a
