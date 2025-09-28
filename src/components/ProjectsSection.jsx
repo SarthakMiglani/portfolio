@@ -22,7 +22,6 @@ const projects = [
     ],
     video: null,
     tags: ["Kotlin", "Jetpack Compose", "Material 3"],
-    demoUrl: "#",
     githubUrl: "https://github.com/SarthakMiglani/auto-net-connector",
   },
   {
@@ -45,8 +44,7 @@ const projects = [
       "/projects/vakeel4.jpeg",
     ],
     video: null,
-    tags: ["Kotlin", "Jetpack Compose", "Material 3", "Retrofit", "ML Kit", "CameraX"],
-    demoUrl: "#",
+    tags: ["Kotlin", "Jetpack Compose", "Google ML kit"],
     githubUrl: "https://github.com/SarthakMiglani/vakeelapp",
   },
   {
@@ -71,7 +69,6 @@ A robust foundation for launching your own online store!`,
     ],
     video: null,
     tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
     githubUrl: "#",
   },
 ];
@@ -191,15 +188,7 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                      onClick={e => e.stopPropagation()}
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    
                     <a
                       href={project.githubUrl}
                       target="_blank"
