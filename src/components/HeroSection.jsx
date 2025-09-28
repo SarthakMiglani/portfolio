@@ -21,7 +21,7 @@ export const HeroSection = () => {
           
           {/* Profession */}
           <p className="text-3xl md:text-4xl text-foreground opacity-0 animate-fade-in-delay-2">
-            And I'm a <span className="text-primary">Full Stack Developer</span>
+            And I'm an <span className="text-primary">Android & Backend Developer</span>
           </p>
           
           {/* Description */}
