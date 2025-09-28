@@ -16,14 +16,14 @@ const projects = [
     images: [
       "/projects/latch_logo.png",
       "/projects/latch_landing.jpg",
-      "/projects/project3.png",
-      "/projects/project1.png",
-      "/projects/project2.png"
+      "/projects/latch3.png",
+      "/projects/latch4.png",
+      "/projects/latch5.png"
     ],
     video: null,
     tags: ["Kotlin", "Jetpack Compose", "Material 3"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/SarthakMiglani/auto-net-connector",
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const projects = [
     video: null,
     tags: ["Kotlin", "Jetpack Compose", "Material 3", "Retrofit", "ML Kit", "CameraX"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/SarthakMiglani/vakeelapp",
   },
   {
     id: 3,
@@ -147,9 +147,7 @@ export const ProjectsSection = () => {
               ))}
             </div>
             <div className="flex gap-6 mt-2">
-              <a href={selectedProject.demoUrl} target="_blank" rel="noopener noreferrer" className="indigo-button flex items-center gap-2">
-                Live Demo <ExternalLink size={18} />
-              </a>
+          
               <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer" className="indigo-button flex items-center gap-2">
                 GitHub <Github size={18} />
               </a>
@@ -227,7 +225,7 @@ export const ProjectsSection = () => {
             className="indigo-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/machadop1407"
+            href="https://github.com/SarthakMiglani"
           >
             Check My Github <ArrowRight size={16} />
           </a>
